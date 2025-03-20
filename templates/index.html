@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <section id="hero">
+        <div class="hero-content">
+            <h1>I'm Bhushan Kor</h1>
+            <p>Information Technology Student | Aspiring Developer</p>
+            <p>Passionate about creating innovative solutions and exploring new technologies.</p>
+            <a href="#projects-home" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Bhushan Kor">
+                <p>I am an Information Technology student at Vivekanand Education Society's Institute of Technology with a CGPI of 9.28 (Till Sem 5). I am passionate about web development and desktop application development using Python. I have internship experience in Java and Python development, and I enjoy building projects that solve real-world problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Web Development (HTML, CSS, JS, Tailwind CSS, Bootstrap)</li>
+                <li>Desktop App Development (Python)</li>
+                <li>Languages (C, C++, Java, Python, SQL)</li>
+                <li>AI (Gemini AI)</li>
+                <li>Cloud (Google Cloud)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects-home">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-preview">
+                <h3>Fitness-Campus Health and Wellness Platform</h3>
+                <p>A platform to monitor mental and physical health, integrated with Gemini AI for fitness plans.</p>
+                <a href="https://github.com/BKCODE2003/Campus_Health.git" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-preview">
+                <h3>Fitness Plan Generator</h3>
+                <p>AI-driven fitness plan generator tailored to specific goals and needs.</p>
+                <a href="https://fitnessplangenerator.streamlit.app/" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-home">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: bhushankor12345.9@gmail.com</p>
+            <a href="https://www.linkedin.com/in/bhushan-kor-84b293282/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/BKCODE2003" target="_blank">GitHub</a>
+        </div>
+    </section>
+{% endblock %}

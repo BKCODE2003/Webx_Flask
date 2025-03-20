@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Portfolio{% endblock %}
+{% block content %}
+    <h1>My Projects</h1>
+    <div class="project-grid">
+        {% for project in projects %}
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{{ url_for('static', filename=project.get('image')) }}" alt="{{ project.get('title') }}">
+                </div>
+                <div class="project-details">
+                    <h3>{{ project.get('title') }}</h3>
+                    <p>{{ project.get('description') }}</p>
+                    <a href="{{ project.get('link') }}" target="_blank" class="project-link">View Project</a>
+                </div>
+                <div class="glowing-border"></div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
